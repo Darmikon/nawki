@@ -1,0 +1,158 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: table;
+	width: 100%;
+}
+
+.container {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	background: azure;
+	width: 100%;
+	xposition: relative;
+	xtop: 100px;
+}
+
+/*table, caption, tbody, tfoot, thead, tr, th, td {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*border: 0;*/
+/*outline: 0;*/
+/*font-size: 100%;*/
+/*vertical-align: baseline;*/
+/*background: transparent;*/
+/*}*/
+
+.nawki {
+	width: 300px;
+	height: 300px;
+	margin:0px auto;
+	position: relative;
+	xleft: 40%;
+}
+
+/*@media (max-width: 980px) {*/
+/*.nawki {*/
+/*left: 25%; */
+/*} }*/
+
+[class*=col] {
+	width: 75px;
+	height: 75px;
+	outline: 1px solid;
+	position: absolute;
+	xborder-collapse: collapse;
+	cursor: pointer;
+}
+
+.animated {
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.animated-initial {
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+/*  *\
+цикл построения сетки пятнашек
+\*  */
+.col1 {
+	left: 0px;
+	top: 0;
+}
+
+.col5 {
+	left: 0px;
+	top: 75px;
+}
+
+.col9 {
+	left: 0px;
+	top: 150px;
+}
+
+.col13 {
+	left: 0px;
+	top: 225px;
+}
+
+.col2 {
+	left: 75px;
+	top: 0;
+}
+
+.col6 {
+	left: 75px;
+	top: 75px;
+}
+
+.col10 {
+	left: 75px;
+	top: 150px;
+}
+
+.col14 {
+	left: 75px;
+	top: 225px;
+}
+
+.col3 {
+	left: 150px;
+	top: 0;
+}
+
+.col7 {
+	left: 150px;
+	top: 75px;
+}
+
+.col11 {
+	left: 150px;
+	top: 150px;
+}
+
+.col15 {
+	left: 150px;
+	top: 225px;
+}
+
+.col4 {
+	left: 225px;
+	top: 0;
+}
+
+.col8 {
+	left: 225px;
+	top: 75px;
+}
+
+.col12 {
+	left: 225px;
+	top: 150px;
+}
+
+.col16 {
+	left: 225px;
+	top: 225px;
+}
+
+#dragZone {
+	height: 300px;
+	border: 1px solid;
+	margin: 10px;
+}

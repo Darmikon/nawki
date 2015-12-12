@@ -1,0 +1,42 @@
+{
+	"name": "nawki",
+	"version": "1.0.0",
+	"description": "javascript game",
+	"main": "index.js",
+	"scripts": {
+		"start": "npm run webpack:serve",
+		"webpack:serve": "webpack --progress --colors --watch",
+		"test": "eslint --config .eslintrc compact src/js/helpers.js > eslint.html --fix --format html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hellfrom/nawki.git"
+	},
+	"keywords": [
+		"javascript",
+		"css",
+		"game"
+	],
+	"author": "Roman Yudin",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hellfrom/nawki/issues"
+	},
+	"homepage": "https://github.com/hellfrom/nawki#readme",
+	"devDependencies": {
+		"babel-core": "^5.8.25",
+		"babel-eslint": "^4.1.3",
+		"babel-loader": "^5.3.2",
+		"babel-runtime": "^5.8.25",
+		"browser-sync": "^2.9.11",
+		"browser-sync-webpack-plugin": "^1.0.0",
+		"css-loader": "^0.19.0",
+		"eslint": "^1.7.1",
+		"eslint-loader": "^1.1.0",
+		"extract-text-webpack-plugin": "^0.8.2",
+		"node-sass": "^3.3.3",
+		"sass-loader": "^3.0.0",
+		"style-loader": "^0.12.4",
+		"webpack": "^1.12.2"
+	}
+}

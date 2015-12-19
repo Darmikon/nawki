@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "npm run webpack:serve",
 		"webpack:serve": "webpack --progress --colors --watch",
-		"test": "eslint --config .eslintrc compact src/js/helpers.js > eslint.html --fix --format html"
+		"test": "eslint --config .eslintrc compact src/js/helpers.js > eslint.html --format html"
 	},
 	"repository": {
 		"type": "git",

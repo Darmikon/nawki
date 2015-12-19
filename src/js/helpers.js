@@ -3,20 +3,18 @@ var helpers = {
 		return getComputedStyle(oElm).getPropertyValue(css3Prop);
 	}
 	,addClass(o,c){
-			o.classList.add(c);
-		}
+		o.classList.add(c);
+	}
 	,removeClass(o,c){
-			o.classList.remove(c);
-		}
+		o.classList.remove(c);
+	}
 	,clone(obj){
 		var temp;
 
 		if(obj === null || typeof obj !== 'object'){
 			return obj;
 		}
-
 		temp = obj.constructor(); // changed
-
 		for(const key in obj){
 			if(obj.hasOwnProperty(key)){
 				temp[key] = this.clone(obj[key]);
